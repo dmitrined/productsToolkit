@@ -21,7 +21,13 @@ export const ProductsList = () => {
   }, [dispatch])
 
   if (loading)
-    return <p className="text-xl text-center text-gray-600 p-8">Загрузка...</p>
+    return <p className="text-xl text-center text-gray-600 p-8">{"Загрузка..."}
+      <button type="button" className="bg-indigo-500 ..." disabled>
+  <svg className="mr-3 size-5 animate-spin ..." viewBox="0 0 24 24">
+  </svg>
+  Processing…
+</button>
+    </p>
 
   return (
     <div className="max-w-7xl mx-auto p-4 sm:px-6 lg:px-8">

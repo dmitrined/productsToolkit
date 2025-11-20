@@ -81,3 +81,4 @@ export const selectProducts = (state: RootState ) => state.products.list;
 export const selectLoading = (state: RootState) => state.products.loading;
 
 export default productsSlice.reducer;
+
